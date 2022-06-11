@@ -1,0 +1,43 @@
+.chat{
+    background-color: #363a3f;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .chat__messages{
+        flex: 1;
+    }
+
+    .chat__input{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #474b53;
+        padding: 15px;
+        margin: 20px;
+        color: lightgray;
+        border-top: 1px solid gray;
+        
+        form{
+            flex: 1;
+            
+            input{
+                padding: 15px;
+                background: transparent;
+                color: #fff;
+                font-size: large;
+                width: 100%;
+            }
+
+            button{
+                display: none;
+            }
+        }
+
+        .chat__inputIcons{
+            svg{
+                padding: 5px;
+            }
+        }
+    }
+}
