@@ -2,19 +2,19 @@ import React from 'react'
 import { Avatar } from '@material-ui/core'
 import './Message.scss'
 
-function Message() {
+function Message({ timestamp, user, message}) {
   return (
     <div className='message'>
-        <Avatar/>
+        <Avatar src={user.photo}/>
         <div className="message__info">
             <h4>
-                enstw
+                {user.displayName}
             <span className="message__timestamp">
-                this is timestamp
+                {new Date(timestamp?.toDate()).toUTCString()}
             </span>
             </h4>
 
-            <p>This is a message</p>
+            <p>{message}</p>
         </div>
     </div>
   )

@@ -3,9 +3,11 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    
 
     .chat__messages{
         flex: 1;
+        overflow: auto;
     }
 
     .chat__input{
